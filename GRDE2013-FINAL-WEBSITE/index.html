@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--meta contents-->
+    <meta name="author" content="Luna Lim">
+    <meta name="description" content="Clean Up Australia aims to bring together Australians nationwide to save the environment.">
+    <meta name="keywords" content="environment, activism, Australia, recycling">
+    <!--meta contents-->
+
+    <!--website icon-->
+    <link rel="icon" href="images/thumbnail.png"> 
+
+    <!--plug-ins-->
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/58620ea0ad.js" crossorigin="anonymous"></script>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!--swiper.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--svg-->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <!--stylesheet link-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--title-->
+    <title>Clean Up Australia</title>
+    
+</head>
+<body>
+
+    <!--Nav bar-->
+        <nav class="nav-bar">
+                <!--top logo-->
+            <a href="#Home-scroll"><img id="logo" src="images/logo.png" alt="company logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#Home-scroll" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#About-scroll" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#Why-scroll" class="nav-link">The Issue</a></li>
+                <li class="nav-item"><a href="#Act-scroll" class="nav-link">Act</a></li>
+            </ul>
+            <!--Responsive-->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!--Progress bar-->
+        <sl-progress-bar id="progress-bar" value="0" style="--height: 6px;"></sl-progress-bar>
+
+        <!---->
+
+       <!--MAIN CONTENT-->
+        <!--SECTION 1 HOME-->
+        <div id="Home-scroll"></div>
+            <section id="Home">
+                <!--hero homepage image-->
+                <div class="caption-container">
+                    <div class="img-container hero-1-container">
+                        <img id="hero-1" src="images/hero1.jpg" alt="person recycling">
+                    </div>
+                    <!--caption text on hero image-->
+                        <div class="caption">
+                            <h1>Do Your<br>Part!</h1>  
+                            <!--donate button on hero image-->
+                            <button id="donate-btn">Donate Now!</button>
+                        </div>
+                </div>
+                    <!--decorative images-->
+                    <sl-animation name="heartBeat" duration="4000" play>
+                        <img id="sun" src="images/sun.png" alt="sun">
+                    </sl-animation>
+                    <sl-animation name="heartBeat" duration="4000" play>
+                        <img id="scribble" src="images/scribble.png" alt="blue scribble">
+                    </sl-animation>
+            </section>
+        <!--SECTION 1 END-->
+
+
+
+        <!--SECTION 2 ABOUT-->
+        <div id="About-scroll"></div>
+        <section id="About">
+            <!--About text-->
+            <div class="text-animation">
+                <div id="about-text">
+                <h2>Clean Up<br>Australia Day</h2>
+                <p>Every year on the first Sunday of march, Australians unite to conserve the environment and end waste. 
+                    Clean Up Australia Day challenges all Aussies to pop on some gloves, grab a rubbish bag 
+                    and come together to clean up their community.</p>
+                </div>
+            </div>
+            <!--About images-->
+            <div class="img">
+                <div class="img-container leaves-container">
+                    <img id="leaves-img" src="images/leaves.png" alt="leaves">
+                </div>
+                <div class="img-container clean-up-container">
+                    <img id="clean-up-img" src="images/clean-up.jpg" alt="people cleaning up">
+                </div>
+            </div>
+        </section>
+        <!--SECTION 2 END-->
+
+
+
+        <!--SECTION 3 WHY-->
+        <section id="The-Issue">
+            <div class="what-container">
+                <!--What text-->
+                <div id="what-text">
+                    <h2>What's the big issue?</h2>
+                    <p>One of Australia’s biggest crises - waste.<br>
+                        Australians are creating more waste than ever, so we need to reduce the rubbish that enters our environment and the waste that goes to landfill. 
+                        With rampant consumerism, unnecessary waste and poor recycling habits, Australians are making too much rubbish - and not doing enough about it. 
+                    </p>
+                </div>
+                <div id="Why-scroll"></div>
+                <!--Question mark img-->
+                <div>
+                    <img id="question-mark" src="images/question.svg" alt="question mark">
+                </div>
+                <!--Section blue background-->
+                <div id="blue-background"></div>
+            </div>
+            
+            <div class="why-container">
+                <!--Why text-->
+                <div id="why-heading">
+                    <h2>Why's it my problem?</h2>
+                    <h2>By 2050...</h2>
+                </div>
+                <!--Statistics-->
+                <div class="statistics">
+                    <!--Text inside ring--><h2 id="statistics-text-1">1/3</h2>
+                    <!--Progress ring 1-->
+                    <svg class="meter" id="progress-ring-1">
+                        <circle class="bg" cx="8vw" cy="8vw" r="7vw"/><!--Radius/size of rings-->
+                        <circle class="meter-1" cx="8vw" cy="8vw" r="7vw"/>
+                    </svg>
+
+                    <!--Bar graph svg-->
+                    <dotlottie-player id="bar-graph" src="https://lottie.host/7b062966-a27e-460b-a5c1-3239fa502007/liGY32PCIE.json" background="transparent" 
+                    speed="1" style="width: 30vw; height: 30vw;" autoplay></dotlottie-player>
+
+                    <!--Text inside ring--><h2 id="statistics-text-2">14.5<br>million</h2>
+                    <!--Progress ring 2-->
+                    <svg class="meter" id="progress-ring-2">
+                        <circle class="bg" cx="8vw" cy="8vw" r="7vw" />
+                        <circle class="meter-2" cx="8vw" cy="8vw" r="7vw"/>
+                    </svg>
+                </div>
+
+                <!--text below statistics-->
+                <div class="statistics-info">
+                    <div id="info-1">
+                    <h2>1/3 OF EARTH’S ANIMAL AND<br>PLANT SPECIES COULD GO<br>EXTINCT</h2>
+                    <p>If current greenhouse gas emissions<br>continue</p>
+                    </div>
+                    <div id="info-2">
+                        <h2>Australia’s sea levels<br>will move up by 15-30cm</h2>
+                        <p>Meaning coastal flooding will worsen. </p>
+                    </div>
+                    <div  id="info-3">
+                        <h2>Climate change could<br>cause 14.5 million<br>deaths</h2>
+                        <p>as well as $12.5 trillion in economic losses.</p>
+                    </div>
+
+                    <div id="why-text">
+                        <p>...And that’s just to name a few. <br>
+                            If we want to save our country and wildlife from pollution,<br>
+                            Australians need to step up their game. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blobs">
+                <svg 
+                  id="blob"
+                  width="216px"
+                  height="251.25px"
+                  viewBox="0 0 864 1005" 
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path 
+                    class="blob1"
+                    d="M91.1963 152.076C-156.703 836.782 157.164 1004.87 363.746 1004.78C652.209 976.431 814.814 895.442 864 659.415C864 565.121 846.061 417.894 652.209 189.388C381.983 -129.144 138.19 22.2772 91.1963 152.076Z" 
+                  fill="#8AD2FF"/>
+                </svg>
+                <svg 
+                id="blob2"
+                viewBox="0 0 864 1005" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+                <path 
+                  class="blob2"
+                  d="M8.99982 247C109.747 538.413 -120 761.5 109.746 883.774C360.5 970.5 696 813 610 538.413C514 297 426.5 363.5 360.5 156.999C262.329 -150.16 -56.9301 56.2959 8.99982 247Z"
+                fill="#0070BA"/>
+              </svg>
+            </div>
+
+            <!--wave background shape-->
+            <div class="wave-container">
+                <div id="cream-wave-top"></div>
+                <div id="cream-wave"></div>
+                <div id="cream-wave-bottom"></div>
+            </div>
+
+
+        </section>
+        <!--SECTION 3 END-->
+
+
+
+        <!--SECTION 4 ACT-->
+        <section id="Act">
+            <div class="action-container">
+                <!--act text-->
+                <div id="action-text">
+                    <h2>What can I do?</h2>
+                    <p>You can help clean up Australia with these easy activities.<br>
+                        Even small things like these make a big difference.</p>
+                </div>
+
+            <div id="Act-scroll"></div>
+
+                <!--hero carousel-->
+                <div #swiperRef="" class="swiper mySwiper action-swiper">
+                    <div class="swiper-wrapper">
+                    
+                    <!--slide 1-->
+                      <div class="swiper-slide">
+                        <div class="carousel-shade"></div>
+                        <div class="carousel-contents">
+                            <p class="carousel-title">Download our free app</p>
+                            <p class="carousel-subtext">Recycle Mate is a game-changer 
+                                as it removes the recycling guesswork, no matter where you are in Australia!</p>
+                            <button class="carousel-button">Read more
+                                <sl-icon name="arrow-right" class="carousel-arrow"></sl-icon>
+                            </button>
+                        </div>
+                        <img class="carousel-img" src="images/app.jpg" alt="app">
+                      </div>
+
+                    <!--slide 2-->
+                      <div class="swiper-slide">
+                        <div class="carousel-shade"></div>
+                        <div class="carousel-contents">
+                            <p class="carousel-title">Learn about your council</p>
+                            <p class="carousel-subtext">Most councils have a website which will tell you what is accepted, 
+                                and many bins list the materials that can be put in them.</p>
+                            <button class="carousel-button">Read more
+                                <sl-icon name="arrow-right" class="carousel-arrow"></sl-icon>
+                            </button>
+                        </div>
+                        <img class="carousel-img" src="images/bins.jpg" alt="app">
+                      </div>
+
+                    <!--slide 3-->
+                      <div class="swiper-slide">
+                        <div class="carousel-shade"></div>
+                        <div class="carousel-contents">
+                            <p class="carousel-title">Cash in your cans</p>
+                            <p class="carousel-subtext">Container deposit schemes provide a financial incentive to reduce litter, and meaning fewer recyclable materials are sent to landfill. 
+                            </p>
+                            <button class="carousel-button">Read more
+                                <sl-icon name="arrow-right" class="carousel-arrow"></sl-icon>
+                            </button>
+                        </div>
+                        <img class="carousel-img" src="images/cans.jpg" alt="cans">
+                      </div>
+
+                    <!--slide 4-->
+                      <div class="swiper-slide">
+                        <div class="carousel-shade"></div>
+                        <div class="carousel-contents">
+                            <p class="carousel-title">Battery Recycling</p>
+                            <p class="carousel-subtext">Australia has an official battery recycling scheme. Which means it's super easy to give your dead batteries new life.
+                            </p>
+                            <button class="carousel-button">Read more
+                                <sl-icon name="arrow-right" class="carousel-arrow"></sl-icon>
+                            </button>
+                        </div>
+                        <img class="carousel-img" src="images/batteries.jpg" alt="batteries">
+                      </div>
+
+                    <!--slide 5-->
+                      <div class="swiper-slide">
+                        <div class="carousel-shade"></div>
+                        <div class="carousel-contents">
+                            <p class="carousel-title">Recycle Aluminium Foil</p>
+                            <p class="carousel-subtext">Scrunch up your aluminium foil into the size of a small fist, then place it in the yellow recycling bin. 
+                            </p>
+                            <button class="carousel-button">Read more
+                                <sl-icon name="arrow-right" class="carousel-arrow"></sl-icon>
+                            </button>
+                        </div>
+                        <img class="carousel-img" src="images/aluminum.png" alt="aluminium">
+                      </div>
+
+                    </div>
+                    <!--slider control buttons-->
+                    <div class="circle-bg">
+                        <div class="swiper-button-next swiper-button">
+                        <sl-icon name="arrow-right" class="next-arrow"></sl-icon>
+                        </div>
+                    </div>
+                    <div class="circle-bg">
+                        <div class="swiper-button-prev swiper-button">
+                            <sl-icon name="arrow-left" class="back-arrow"></sl-icon>
+                        </div>
+                    </div>
+                    <!--indicator dots-->
+                    <div class="swiper-pagination"></div>
+                    
+                </div>
+
+                <button id="view-1" class="view-button">View All
+                    <sl-icon name="arrow-right" class="carousel-arrow"></sl-icon>
+                </button>
+
+            </div>
+
+            <div class="inspire-container">
+                <!--hashtag img-->
+                <img id="hashtag" src="images/hashtag.svg" alt="hashtag symbol">
+                <!--inspire text-->
+                <div id="inspire-text">
+                    <h2>Inspire Others</h2>
+                    <p>Share your pledge and tag<br>
+                        @CleanUpAustralia #CleanUpAustralia</p>
+                </div>
+                <!--blue-background-->
+                <div id="blue-background-2"></div>
+
+            </div>
+
+            <!--Carousel 2-->
+            <div id="inspire-carousel">
+                <div #swiperRef="" class="swiper mySwiper inspire-swiper">
+                    <div class="swiper-wrapper swiper-wrapper-2">
+                    
+                    <!--slide 1-->
+                      <div class="swiper-slide inspire-slide">
+                        <div class="swiper-slide">
+                            <div class="inspire-carousel-img">
+                            <img class="carousel-img" src="images/inspire-1.png" alt="person holding paper">
+                            </div>
+                        </div>
+                      </div>
+
+                    <!--slide 2-->
+                      <div class="swiper-slide inspire-slide">
+                        <div class="swiper-slide">
+                            <div class="inspire-carousel-img">
+                            <img class="carousel-img" src="images/inspire-2.png" alt="person holding paper">
+                            </div>
+                        </div>
+                      </div>
+
+                    <!--slide 3-->
+                      <div class="swiper-slide inspire-slide">
+                        <div class="swiper-slide">
+                            <div class="inspire-carousel-img">
+                            <img class="carousel-img" src="images/inspire-3.png" alt="person holding paper">
+                            </div>
+                        </div>
+                      </div>
+
+                    <!--slide 4-->                   
+                      <div class="swiper-slide inspire-slide">
+                        <div class="swiper-slide">
+                            <div class="inspire-carousel-img">
+                            <img class="carousel-img" src="images/inspire-1.png" alt="person holding paper">
+                            </div>
+                        </div>
+                      </div>
+
+                    <!--slide 5-->                   
+                      <div class="swiper-slide inspire-slide">
+                        <div class="swiper-slide">
+                            <div class="inspire-carousel-img">
+                            <img class="carousel-img" src="images/inspire-2.png" alt="person holding paper">
+                            </div>
+                        </div>
+                      </div>
+
+                    <!--slide 6-->                   
+                      <div class="swiper-slide inspire-slide">
+                        <div class="swiper-slide">
+                            <div class="inspire-carousel-img">
+                            <img class="carousel-img" src="images/inspire-3.png" alt="person holding paper">
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <button id="view-2" class="view-button">View All
+                    <sl-icon name="arrow-right" class="carousel-arrow"></sl-icon>
+                </button>
+
+            </div>
+        </section>
+        <!--SECTION 4 END-->
+
+        <section id="Footer">   <!--Bottom elements-->
+            <div id="footer-wrapper">
+                <!--SOCIAL MEDIA-->
+                <a href="#Home">
+                    <img id="footer-logo" src="images/logo.png" alt="company logo"> <!--Logo image-->
+                    </a>
+                    <div class="footer-text">
+                        <p>
+                            This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. 
+                            All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). 
+                            No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+                        </p>
+                    </div>
+                    <div class="socials-wrapper">   <!--Social media links-->
+                        <div id="instagram" class="social-icons">
+                            <a href="https://www.instagram.com/">   <!--Instagram link-->
+                                <img src="images/instagram.png" alt="Icon of Instagram">    <!--Logo image-->
+                            </a>
+                        </div>
+                        <div id="tiktok" class="social-icons">
+                            <a href="https://www.tiktok.com/">   <!--Instagram link-->
+                                <img src="images/tiktok.png" alt="Icon of Tiktok">    <!--Logo image-->
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="input-validation-type">
+                        <sl-input class="email-button" type="email" label="Shoot us an Email!" placeholder="you@example.com" required></sl-input>
+                        <br />
+                        <button class="submit-button" type="submit" variant="primary">Submit</button>
+                    </form>
+
+                <!--SOCIAL MEDIA END-->
+
+                <!--FOOTER BACKGROUND-->
+                <div id="footer-bg">
+                    <img src="images/white-scallop.png" alt="footer background">
+                    <div class="white-bg"></div>
+                </div>
+            </div>
+        <!--FOOTER BACKGROUND END-->
+        </section>
+    <!--FOOTER END-->
+
+
+    <!--Swiper.js plug in-->                   
+    <script type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"> </script>
+    <!--Shoelace plug in-->                   
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/components/progress-ring/progress-ring.js"></script>
+    <!--GSAP plug in-->                   
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!--anime.js plug in-->                   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
